@@ -8,17 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <p class="tonkeeper-address">
-            Адрес: <span id="address">UQDt1Uv8lbDDuLlwoHf01nhqLK3WpjyK5tJ61hRRx7gG4UC2</span>
-        </p>
+        <!-- QR-код с рамкой -->
+        <div class="qr-code">
+            <img src="img/qr.png" alt="QR-код">
+        </div>
+        <!-- Кнопка копирования -->
         <button id="copy-button" class="button">Скопировать</button>
+        <!-- Кнопка для перехода на главную -->
         <a href="index.html" class="button">На главную</a>
     </div>
 
     <script>
-        // Копирование адреса Tonkeeper
+        // Копирование скрытого адреса Tonkeeper
         document.getElementById("copy-button").addEventListener("click", () => {
-            const address = document.getElementById("address").textContent;
+            const address = "UQDt1Uv8lbDDuLlwoHf01nhqLK3WpjyK5tJ61hRRx7gG4UC2";
             navigator.clipboard.writeText(address).then(() => {
                 alert("Адрес скопирован!");
             });
