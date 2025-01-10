@@ -6,17 +6,15 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #fbd3e9, #bb377d); /* Градиентный фон */
+    background: linear-gradient(135deg, #fbd3e9, #bb377d);
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
 
-/* Контейнер для контента */
 .container {
     text-align: center;
 }
 
-/* Аватарка */
 .avatar {
     width: 120px;
     height: 120px;
@@ -32,7 +30,6 @@ body {
     object-fit: cover;
 }
 
-/* Кнопки */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -58,4 +55,11 @@ body {
 
 .button.darkblue {
     background-color: #3578e5;
+}
+
+.tonkeeper-address {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
 }
