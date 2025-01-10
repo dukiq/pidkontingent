@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonkeeper</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <p class="tonkeeper-address">
+            Адрес: <span id="address">UQDt1Uv8lbDDuLlwoHf01nhqLK3WpjyK5tJ61hRRx7gG4UC2</span>
+        </p>
+        <button id="copy-button" class="button">Скопировать</button>
+        <a href="index.html" class="button">На главную</a>
+    </div>
+
+    <script>
+        // Копирование адреса Tonkeeper
+        document.getElementById("copy-button").addEventListener("click", () => {
+            const address = document.getElementById("address").textContent;
+            navigator.clipboard.writeText(address).then(() => {
+                alert("Адрес скопирован!");
+            });
+        });
+    </script>
+    <script src="js/snow.js"></script>
+    <script>
+        // Telegram WebApp API: Разворачиваем приложение на весь экран
+        Telegram.WebApp.expand();
+    </script>
+</body>
+</html>
